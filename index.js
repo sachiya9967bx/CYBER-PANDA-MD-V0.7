@@ -97,7 +97,7 @@ async function startgss() {
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         if (mek.key.id.startsWith('FatihArridho_')) return
         m = smsg(gss, mek, store)
-        require("./gss")(gss, m, chatUpdate, store)
+        require("./main")(gss, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
