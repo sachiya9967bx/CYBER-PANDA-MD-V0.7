@@ -2380,7 +2380,7 @@ await doReact("⬇️");
 
           const captionText = `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *🐼 ＣＹＢＥＲ-ＰＡＮＤＡ-ＭＤ 🐼*
 │  *Youtube Mp4 Player* ✨
 │⿻ *Title:* ${firstVideo.title}
 │⿻ *Duration:* ${firstVideo.duration}
@@ -2442,7 +2442,7 @@ case 'ytvdoc':
 
           const captionText = `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *🐼 ＣＹＢＥＲ-ＰＡＮＤＡ-ＭＤ 🐼*
 │  *Youtube Mp4 Player* ✨
 │⿻ *Title:* ${videoInfo.title}
 │⿻ *Duration:* ${videoInfo.duration}
@@ -2485,7 +2485,7 @@ case 'ytvdoc':
 
           const captionText = `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *🐼 ＣＹＢＥＲ-ＰＡＮＤＡ-ＭＤ 🐼*
 │  *Youtube Mp4 Player* ✨
 │⿻ *Title:* ${firstVideo.title}
 │⿻ *Duration:* ${firstVideo.duration}
@@ -5621,17 +5621,6 @@ case 'bass': case 'blown': case 'deep': case 'earrape': case 'fast': case 'fat':
     break;
 
 
-            
-            case 'menu2':
-case '':
-case '':
-case '':
-{
-  if (isBan) return m.reply(mess.banned);
-        if (isBanChat) return m.reply(mess.bangc);
-    gss.sendPoll(m.chat, "ＣＹＢＥＲ-ＰＡＮＤＡ-ＭＤ-V❼\n\nLIST-MENU", ['.Allmenu', '.Groupmenu', '.Downloadmenu', '.Searchmenu', '.Funmenu', '.Toolmenu', '.Convertmenu', '.aimenu', '.Mainmenu', '.Ownermenu'], { quoted: m });
-}
-break;
 
 function getRandomSymbol() {
     const symbols = ['◉', '★', '◎', '✯','✯','✰','◬','✵','✦']; // Add more symbols as needed
