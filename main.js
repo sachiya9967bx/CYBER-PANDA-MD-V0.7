@@ -851,10 +851,20 @@ function generateMenu(cmdList, title) {
     .map((v) => `│${v}`).join('\n');
 
     return `
-╭───═❮ ${title} ❯═───❖
-│ ╭─────────────···▸
+╭────────────────❖
+│ ╭─────────────❖
+│ │ *Bᴏᴛ Nᴀᴍᴇ* : *${botname}*
+│ │ *Nᴀᴍᴇ* : *${pushname}*
+│ │ *Nᴜᴍʙᴇʀ* : *${m.sender.split('@')[0]}*
+│ │ *Oᴡɴᴇʀ Nᴀᴍᴇ* : *${ownername}*
+│ │ *Pʀᴇꜰɪx* :  *[ . ]*
+│ │ *Uᴘᴛɪᴍᴇ* : *${hours}h ${minutes}m ${seconds}s*
+│ │ *Mᴏᴅᴇ* : *Pᴜɴʟɪᴄ*
+│ ╰─────────────❖
+├──═❮ *ᴍᴇɴᴜ ʟɪsᴛ* ❯═──❖
+├─────────────···▸
 ${formattedCmdList.split('\n').map(item => `│${item ? ' ' + item.trim() : ''}`).join('\n')}
-│ ╰──────────────
+│╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷`;
 }
 
@@ -883,20 +893,16 @@ const menuText = `*ᴍᴇɴᴜ ʟɪsᴛ*
 const menuMessage = `
 ╭────────────────❖
 │ ╭─────────────❖
-│ │ User:- ${citel.pushName}
-│ │ Theme:- ${tlang().title}
-│ │ Prefix:- [ ${prefix} ]
-│ │ Owner:- ${Config.ownername}
-│ │ Plugins:- ${commands.length}
-│ │ Users:- ${total}
-│ │ Uptime:- ${runtime(process.uptime())}
-│ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-│ │ Time:- ${time}
-│ │ Date:- ${date}
+│ │ *Bᴏᴛ Nᴀᴍᴇ* : *${botname}*
+│ │ *Nᴀᴍᴇ* : *${pushname}*
+│ │ *Nᴜᴍʙᴇʀ* : *${m.sender.split('@')[0]}*
+│ │ *Oᴡɴᴇʀ Nᴀᴍᴇ* : *${ownername}*
+│ │ *Pʀᴇꜰɪx* :  *[ . ]*
+│ │ *Uᴘᴛɪᴍᴇ* : *${hours}h ${minutes}m ${seconds}s*
+│ │ *Mᴏᴅᴇ* : *Pᴜɴʟɪᴄ*
 │ ╰─────────────❖
-╰───────────────⊷\n
-╭──═❮ *ᴍᴇɴᴜ ʟɪsᴛ* ❯═──❖
-│╭─────────────···▸
+├──═❮ *ᴍᴇɴᴜ ʟɪsᴛ* ❯═──❖
+├─────────────···▸
 ${menuText.split('\n').map(item => `││▸ ${item.trim()}`).join('\n')}
 │╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷`;
