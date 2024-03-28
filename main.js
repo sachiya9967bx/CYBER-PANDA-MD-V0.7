@@ -851,20 +851,10 @@ function generateMenu(cmdList, title) {
     .map((v) => `│${v}`).join('\n');
 
     return `
-╭────────────────❖
-│ ╭─────────────❖
-│ │ *Bᴏᴛ Nᴀᴍᴇ* : *${botname}*
-│ │ *Nᴀᴍᴇ* : *${pushname}*
-│ │ *Nᴜᴍʙᴇʀ* : *${m.sender.split('@')[0]}*
-│ │ *Oᴡɴᴇʀ Nᴀᴍᴇ* : *${ownername}*
-│ │ *Pʀᴇꜰɪx* :  *[ . ]*
-│ │ *Uᴘᴛɪᴍᴇ* : *${hours}h ${minutes}m ${seconds}s*
-│ │ *Mᴏᴅᴇ* : *Pᴜɴʟɪᴄ*
-│ ╰─────────────❖
-├──═❮ *ᴍᴇɴᴜ ʟɪsᴛ* ❯═──❖
-├─────────────···▸
+╭───═❮ ${title} ❯═───❖
+│ ╭─────────────···▸
 ${formattedCmdList.split('\n').map(item => `│${item ? ' ' + item.trim() : ''}`).join('\n')}
-│╰──────────────
+│ ╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷`;
 }
 
